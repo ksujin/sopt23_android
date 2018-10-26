@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_centerInParent="true"
+        android:id="@+id/rl_main_act_center"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_main_act_id"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_main_act_id"
+                android:text="ID"
+                android:layout_centerVertical="true"
+                />
+            <EditText
+                android:layout_width="64dp"
+                android:layout_height="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/et_main_act_id"
+                android:layout_toRightOf="@+id/tv_main_act_id"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_main_act_pw"
+            android:layout_below="@id/rl_main_act_id"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_main_act_pw"
+                android:text="PW"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:layout_width="64dp"
+                android:layout_height="16dp"
+                android:id="@+id/et_main_act_pw"
+                android:background="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/tv_main_act_pw"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign in"
+        android:id="@+id/btn_main_act_sign_in"
+        android:layout_below="@id/rl_main_act_center"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
