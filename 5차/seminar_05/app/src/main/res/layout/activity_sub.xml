@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/btn_sub_act_show_bottom_bar"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_name_box">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="클릭!"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <!--높이만 (elevation) 주면 안되고 background도 같이 줘야함-->
+    <RelativeLayout
+        android:id="@+id/rl_sub_act_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:background="#A7FFEB"
+        android:elevation="2dp"
+        android:visibility="gone">
+    </RelativeLayout>
+</RelativeLayout>

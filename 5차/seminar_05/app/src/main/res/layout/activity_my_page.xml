@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="horizontal"
+    android:id="@+id/topTabBar"
+    >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필"
+            android:textColor="@color/colorMarinBlue"
+            android:layout_centerInParent="true"
+            />
+        <View
+            android:layout_width="90dp"
+            android:layout_height="3dp"
+            android:background="@color/colorMarinBlue"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 페이지 "
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+<RelativeLayout
+    android:id="@+id/topImgView"
+    android:layout_width="match_parent"
+    android:layout_height="169dp"
+    android:layout_below="@+id/topTabBar"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_img"
+        />
+    <TextView
+        android:id="@+id/helloTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="안녕하세요!"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="집꾸미기 좋은날이에요 :)"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/helloTxt"
+        android:layout_below="@+id/helloTxt"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/userImgView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/infoView"
+        android:layout_marginLeft="16dp"
+        android:background="@color/colorMarinBlue"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/infoView"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_toRightOf="@+id/userImgView"
+        android:layout_below="@+id/topImgView"
+        >
+
+        <TextView
+            android:id="@+id/nicknameLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="큐티문어 님"
+            android:textSize="15sp"
+            android:layout_alignParentLeft="true"
+           android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unii96@naver.com"
+            android:textSize="9sp"
+            android:layout_centerInParent="true"
+            android:layout_alignLeft="@+id/nicknameLbl"
+            android:layout_below="@+id/nicknameLbl"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:background="@drawable/shape_name_box"
+            android:text="설정"
+            android:textSize="10sp"
+             />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/scrapLikeWhiteView"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_below="@+id/infoView"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            >
+            <RelativeLayout
+                android:id="@+id/scrapLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:layout_alignParentTop="true"
+                >
+                <ImageView
+                    android:id="@+id/scrapIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mypage_scrap_icon"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#38c2f4"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                    tools:text="스크랩"
+                    android:layout_toRightOf="@+id/scrapIcon"
+                    android:layout_marginLeft="6dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#bfbfbf"
+                android:lineSpacingExtra="1sp"
+                android:gravity="center_horizontal"
+                tools:text="59 개"
+                android:layout_below="@+id/scrapLbl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:background="@color/colorMarinBlue"
+            >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            >
+            <RelativeLayout
+                android:id="@+id/likeLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:layout_alignParentTop="true"
+                >
+                <ImageView
+                    android:id="@+id/likeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mypage_heart_icon"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#38c2f4"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                    tools:text="좋아요"
+                    android:layout_toRightOf="@+id/likeIcon"
+                    android:layout_marginLeft="6dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#bfbfbf"
+                android:lineSpacingExtra="1sp"
+                android:gravity="center_horizontal"
+                tools:text="1004"
+                android:layout_below="@+id/likeLbl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/scrapLikeWhiteView"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background= "#fcfcfc"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="나의 쇼핑"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mypage_left_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background= "#858585"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="문어문어"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mypage_left_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background= "#858585"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
